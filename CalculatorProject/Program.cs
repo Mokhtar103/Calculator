@@ -5,9 +5,21 @@
         static void Main(string[] args)
         {
             Console.Write("Enter first Num: ");
-            var num1 = int.Parse(Console.ReadLine());
+
+            if (!int.TryParse(Console.ReadLine(), out int num1))
+            {
+                Console.WriteLine("Invalid first number.");
+                return;
+            }
+
             Console.Write("Enter second Num: ");
-            var num2 = int.Parse(Console.ReadLine());
+
+            if (!int.TryParse(Console.ReadLine(), out int num2))
+            {
+                Console.WriteLine("Invalid second number.");
+                return;
+            }
+
             Console.Write("Enter operation (+, -, *, /): ");
             var operation = Console.ReadLine();
 
@@ -30,10 +42,6 @@
                     break;
 
             }
-
-
-
-
         }
     }
 }
