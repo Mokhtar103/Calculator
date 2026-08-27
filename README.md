@@ -44,3 +44,6 @@ dotnet run
 Or simply open the project in Visual Studio and press:
 Ctrl + F5
 
+## 📸 Screenshot
+
+![Calculator Screenshot](screenshots/calculator.png)
